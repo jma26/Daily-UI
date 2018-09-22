@@ -1,0 +1,24 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.main {
+  height: inherit;
+  width: inherit;
+}
+
+.content {
+  border: 2px solid green;
+  display: inline-block;
+}
+
+label {
+  display: block;
+  border-top: 2px solid 
+}
