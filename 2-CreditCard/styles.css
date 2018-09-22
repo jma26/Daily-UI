@@ -11,14 +11,75 @@ html {
 .main {
   height: inherit;
   width: inherit;
+  display: flex;
+  justify-content: center;
 }
 
-.content {
+.main-content {
+  background-color: #2F2F2F;
   border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  width: 50%;
+}
+
+.main-content h1 {
+  text-align: center;
+}
+
+.form-group {
+  border: 2px solid yellow;
+}
+
+.form-content:nth-of-type(1) {
+  border: 2px solid red;
   display: inline-block;
 }
 
-label {
+.form-group:nth-of-type(1) {
+  text-align: center;
+}
+
+.form-group:nth-of-type(2) {
+  border: 2px solid blue;
+  display: inline-block;
+}
+
+input[type="tel"], input[type="text"] {
   display: block;
-  border-top: 2px solid 
+  font-size: 16px;
+  padding: 4px;
+}
+
+input[name="Card-Number"] {
+  background-color: #2F2F2F;
+  border: none;
+  color: #F3F9D2;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  outline: none;
+}
+
+input[name="Exp"] {
+  width: 44px;
+}
+
+input[name="CCV"] {
+  width: 32px;
+}
+
+h1, label {
+  color: #F3F9D2;
+  letter-spacing: 2px;
+}
+
+label {
+  border-top: 2px solid #BDC4A7;
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 4px;
+  padding: 4px 0px 4px 0px;
+  text-align: left;
+  width: 100%;
 }

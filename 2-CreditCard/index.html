@@ -9,22 +9,22 @@
 </head>
 <body>
     <div class="main">
-      <div class="content">
+      <div class="main-content">
         <h1> Payment </h1>
         <div class="form-group">
-          <input type="tel" maxLength="19">
-          <label> Card Number </label>
+          <div class="form-content">
+            <input type="tel" maxLength="19" name="Card-Number" placeholder="0123 4567 7890 1234">
+            <label> Card Number </label>
+          </div>
         </div>
         <div class="form-group">
-          <input type="tel">
-          <label> Exp </label>
-        </div>
-        <div class="form-group">
-          <input type="tel">
+          <input type="tel" name="Exp" placeholder="MM/YY">
+          <label> EXP </label>
+          <input type="tel" maxLength="4" name="CCV" placeholder="012">
           <label> CCV </label>
         </div>
         <div class="form-group">
-          <input type="text">
+          <input type="text" name="Cardholder-name" placeholder="Full Name">
           <label> Cardholder's Name </label>
         </div>
       </div>
