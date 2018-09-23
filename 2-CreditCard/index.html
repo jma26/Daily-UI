@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./styles.css">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <title> Daily UI #2: Credit Card Checkout</title>
 </head>
 <body>
@@ -12,24 +14,29 @@
       <div class="main-content">
         <div class="creditcard">
           <h1> Payment </h1>
+          <div class="form-content icon-container">
+            <i class="fab fa-cc-visa fa-2x fontAwesomeIcons"></i>
+            <i class="fab fa-cc-discover fa-2x fontAwesomeIcons"></i>
+            <i class="fab fa-cc-mastercard fa-2x fontAwesomeIcons"></i>
+          </div>
+          <div class="form-content">
+            <input type="tel" maxLength="19" name="Card-Number" placeholder="0123 4567 7890 1234">
+            <label> Card Number </label>
+          </div>
+          <div class="form-group">
             <div class="form-content">
-              <input type="tel" maxLength="19" name="Card-Number" placeholder="0123 4567 7890 1234">
-              <label> Card Number </label>
-            </div>
-            <div class="form-group">
-              <div class="form-content">
-                <input type="tel" name="Exp" maxLength="5" placeholder="MM/YY">
-                <label> EXP </label>
-              </div>
-              <div class="form-content">
-                <input type="tel" maxLength="4" name="CCV" placeholder="012">
-                <label> CCV </label>
-              </div>
+              <input type="tel" name="Exp" maxLength="5" placeholder="MM/YY">
+              <label> EXP </label>
             </div>
             <div class="form-content">
-              <input type="text" name="Cardholder-name" placeholder="Full Name">
-              <label> NAME ON CARD </label>
+              <input type="tel" maxLength="4" name="CCV" placeholder="012">
+              <label> CCV </label>
             </div>
+          </div>
+          <div class="form-content">
+            <input type="text" name="Cardholder-name" placeholder="Full Name">
+            <label> NAME ON CARD </label>
+          </div>
         </div>
       </div>
     </div>

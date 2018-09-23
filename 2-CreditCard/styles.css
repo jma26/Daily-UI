@@ -22,9 +22,27 @@ html {
   width: 100%;
 }
 
+h1 {
+  text-align: center;
+}
+
 .creditcard {
   display: inline-block;
   border: 2px solid #F3F9D2;
+  padding: 16px;
+}
+
+.icon-container {
+  text-align: center;
+}
+
+.fontAwesomeIcons {
+  color: white;
+  padding: 0px 4px;
+}
+
+.form-content {
+  margin-top: 12px;
 }
 
 .form-group {
