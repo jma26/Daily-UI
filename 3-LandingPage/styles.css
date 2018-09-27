@@ -1,0 +1,34 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.main {
+  min-width: 100vw;
+  min-height: 100vh;
+  background: url('./imgs/long_road_by_casey_horner.jpg');
+  background-position: center;
+  background-size: cover;
+  z-index: -2;
+}
+
+/* Brightness filters */
+.lightning {
+  background: url('./imgs/long_road_by_casey_hornery.jpg');
+  background-position: center;
+  background-size: cover;
+  filter: brightness(3);
+  -webkit-filter: brightness(3);
+  -o-filter: brightness(3);
+  -moz-filter: brightness(3);
+  z-index: -1;
+}
+
+/* Opacity  */
+.flash {
+  animation: flash ease-out 7s infinite;
+  -webkit-animation: flash ease-out 7s infinite;
+  -o-animation: flash ease-out 7s infinite;
+  -moz-animation: flash ease-out 7s infinite;
+  animation-delay: 2s;
+}
