@@ -62,9 +62,38 @@
   100% { opacity: 0; }
 }
 
+/* Font-size grow  */
+.text-grow {
+  -webkit-animation: grow ease-out 7s infinite;
+  -moz-animation: grow ease-out 7s infinite;
+  -o-animation: grow ease-out 7s infinite;
+  animation: grow ease-out 7s infinite;
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes grow {
+  0% { font-size: 1rem; }
+  20% { font-size: 32px; }
+  40% { font-size: 40px; }
+  60% { font-size: 48px; }
+  80% { font-size: 40px; }
+  90% { font-size: 32px; }
+  100% { font-size: 1rem; }
+}
+
+@keyframes grow {
+  0% { font-size: 1rem; }
+  20% { font-size: 32px; }
+  40% { font-size: 40px; }
+  60% { font-size: 48px; }
+  80% { font-size: 40px; }
+  90% { font-size: 32px; }
+  100% { font-size: 1rem; }
+}
+
 .logo {
-  border: 2px solid green;
   color: #FFF;
+  font-size: 24px;
   position: fixed;
   top: 50%;
   text-align: center;
