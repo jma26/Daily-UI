@@ -3,12 +3,11 @@
   padding: 0px;
 }
 
-.main {
+.background {
   background: url('./imgs/long_road_by_casey_horner.jpg');
   background-position: center center;
   background-origin: content-box;
   background-size: cover;
-  background-attachment: fixed;
   height: 100%;
   left: 0;
   position: fixed;
@@ -19,10 +18,11 @@
 
 /* Brightness filters */
 .lightning {
-  background: url('./imgs/long_road_by_casey_hornery.jpg');
+  background: url('./imgs/long_road_by_casey_horner.jpg');
   background-position: center center;
   background-size: cover;
   background-origin: content-box;
+  background-attachment: fixed;
   -webkit-filter: brightness(3);
   -moz-filter: brightness(3);
   -o-filter: brightness(3);
@@ -68,26 +68,25 @@
   -moz-animation: grow ease-out 7s infinite;
   -o-animation: grow ease-out 7s infinite;
   animation: grow ease-out 7s infinite;
-  animation-delay: 2s;
 }
 
 @-webkit-keyframes grow {
   0% { font-size: 1rem; }
-  20% { font-size: 32px; }
-  40% { font-size: 40px; }
-  60% { font-size: 48px; }
-  80% { font-size: 40px; }
-  90% { font-size: 32px; }
+  20% { font-size: 1.5rem; }
+  40% { font-size: 2rem; }
+  60% { font-size: 2.5rem; }
+  80% { font-size: 2em; }
+  90% { font-size: 1.5rem; }
   100% { font-size: 1rem; }
 }
 
 @keyframes grow {
   0% { font-size: 1rem; }
-  20% { font-size: 32px; }
-  40% { font-size: 40px; }
-  60% { font-size: 48px; }
-  80% { font-size: 40px; }
-  90% { font-size: 32px; }
+  20% { font-size: 1.5rem; }
+  40% { font-size: 2rem; }
+  60% { font-size: 2.5rem; }
+  80% { font-size: 2em; }
+  90% { font-size: 1.5rem; }
   100% { font-size: 1rem; }
 }
 
