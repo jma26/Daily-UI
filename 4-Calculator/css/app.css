@@ -1,7 +1,18 @@
-.output-display {
-  border: 1px solid blue;
+.output-display, .small-3 {
+  background-color: #2D3A3A;
+  border: 1px solid #2D3A3A;
 }
 
-.small-3 {
-  border: 1px solid blue;
+.small-3 p, .output-display p {
+  background-color: #248232;
+  color: #FCFFFC;
+}
+
+.small-3 p {
+  margin: 4px 8px;
+}
+
+.output-display p {
+  margin: 8px;
+  padding: 8px 8px 8px 0px;
 }
