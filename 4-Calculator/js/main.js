@@ -1,4 +1,5 @@
 var output_total = ""
+evalBool = false;
 
 function calculator(e) {
   var display = document.getElementById('display');
@@ -6,13 +7,19 @@ function calculator(e) {
   // Concatenate the numbers as a string
   // Check if target is NaN
   if (!isNaN(target)) {
-    console.log('It is a number!');
-    output_total += target
+    if (evalBool) {
+      output_total = 0;
+    } else {
+      console.log('It is a number!');
+      output_total += target
+    }
     // Display output
     display.innerText = output_total;
   } else if (target === "=") {
+    evalBool = true;
     evaluateTotal(output_total);
   } else {
+    evalBool = false;
     // If an operation is detected, add operation as a string
     switch(target) {
       case "-":
