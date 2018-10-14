@@ -16,17 +16,19 @@ function calculator(e) {
     // If an operation is detected, add operation as a string
     switch(target) {
       case "-":
-        output_total += " - "
+        output_total += " - ";
         break;
       case "+":
-        output_total += " + "
+        output_total += " + ";
         break;
       case "*":
-        output_total += " * "
+        output_total += " * ";
         break;
       case "/":
-        output_total += " / "
+        output_total += " / ";
         break;
+      case ".":
+        output_total += ".";
       default:
         console.log('Operation not found');
     }
@@ -38,5 +40,7 @@ function calculator(e) {
 
 function evaluateTotal(total) {
   display.innerText = eval(total);
+  // Save evaluation total to output
+  output_total = eval(total);
   console.log('Your total is ', eval(total));
 }
